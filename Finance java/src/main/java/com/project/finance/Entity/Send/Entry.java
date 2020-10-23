@@ -1,15 +1,17 @@
-package com.project.Finance.Entity.Send;
+package com.project.finance.Entity.Send;
 
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "kirill")
+@Table(name = "entry")
 public class Entry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column
+    private String login;
     @Column
     private double sum; //summary
     @Column
@@ -21,6 +23,14 @@ public class Entry {
 
     public int getId() {
         return id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public void setId(int id) {
@@ -37,7 +47,8 @@ public class Entry {
     public Entry() {
     }
 
-    public Entry(double sum, String category, Date date) {
+    public Entry(String login, double sum, String category, Date date) {
+        this.login = login;
         this.sum = sum;
         this.category = category;
         this.date = date;

@@ -1,7 +1,7 @@
-package com.project.Finance.service;
+package com.project.finance.service;
 
-import com.project.Finance.Entity.Send.Entry;
-import com.project.Finance.repositiry.EntryRepository;
+import com.project.finance.Entity.Send.Entry;
+import com.project.finance.repositiry.EntryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +17,14 @@ public class EntryService {
     }
 
     public List<Entry> findByCategory(String category){ return entryRepository.findByCategory(category); }
+
+    public List<Entry> findByLogin(String login){ return entryRepository.findByLogin(login); }
+
+    public List<Entry> findByLoginAndCategory(String login, String category) {return entryRepository.findByLoginAndCategory(login, category);};
+
+    public double sumAll(String login){return entryRepository.sumAll(login);}
+
+    public double sumOfCategory(String login, String category){return entryRepository.sumOfCategory(login, category);}
 
     public void save(Entry book){
         entryRepository.save(book);
