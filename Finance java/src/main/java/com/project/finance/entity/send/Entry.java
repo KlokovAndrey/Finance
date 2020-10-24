@@ -1,4 +1,4 @@
-package com.project.finance.Entity.Send;
+package com.project.finance.entity.send;
 
 
 import javax.persistence.*;

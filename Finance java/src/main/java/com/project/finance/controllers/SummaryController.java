@@ -1,6 +1,6 @@
 package com.project.finance.controllers;
 
-import com.project.finance.Entity.GetAnswer.Category;
+import com.project.finance.entity.getAnswer.Category;
 import com.project.finance.service.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
 package com.project.finance.service;
 
-import com.project.finance.Entity.Send.Entry;
+import com.project.finance.entity.send.Entry;
 import com.project.finance.repositiry.EntryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

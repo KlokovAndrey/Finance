@@ -1,4 +1,4 @@
-package com.project.finance.Entity.GetAnswer;
+package com.project.finance.entity.getAnswer;
 
 public class Category {
     String login;
