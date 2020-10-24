@@ -6,6 +6,7 @@ It is a RESTfull service that implements access to the postgreSQL's database and
 The database stores records of user spending, including sum, category, date, and text comment.
 
 Used:
+
 1.Spring Boot
 
 2.JPA
