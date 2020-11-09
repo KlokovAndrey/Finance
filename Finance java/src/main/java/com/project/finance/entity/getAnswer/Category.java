@@ -1,8 +1,8 @@
 package com.project.finance.entity.getAnswer;
 
 public class Category {
-    String login;
-    String category;
+    private String login;
+    private String category;
 
     public Category() {
     }
